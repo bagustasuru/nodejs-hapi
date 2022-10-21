@@ -18,7 +18,7 @@ const addNoteHandler = (request, h) => {
 
   if (isSuccess) {
     const response = h.response({
-      status: 'success',
+      status: 'Success',
       message: 'Note has been created',
       data: {
         noteId: id,
@@ -38,7 +38,7 @@ const addNoteHandler = (request, h) => {
 };
 
 const getNoteListHandler = () => ({
-  status: 'success',
+  status: 'Success',
   data: {
     notes,
   },
@@ -51,7 +51,7 @@ const getNoteByIdHandler = (request, h) => {
 
   if (note !== undefined) {
     return {
-      status: 'success',
+      status: 'Success',
       data: {
         note,
       },
